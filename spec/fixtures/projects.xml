@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects type="array">
+  <project>
+    <name>Inbox</name>
+    <assigned-to type="integer">220</assigned-to>
+    <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+    <public type="boolean">false</public>
+    <email-name nil="true"></email-name>
+    <public-heading nil="true"></public-heading>
+    <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+    <default-priority-id type="integer" nil="true"></default-priority-id>
+    <created-by type="integer">219</created-by>
+    <enabled type="boolean">true</enabled>
+    <id type="integer">144</id>
+    <public-interface type="boolean">false</public-interface>
+    <max-response-time type="integer" nil="true"></max-response-time>
+    <default-category-id type="integer" nil="true"></default-category-id>
+    <description>This is the default project, created by the system. Feel free to rename it.</description>
+    <public-message nil="true"></public-message>
+  </project>
+  <project>
+    <name>Find a bug tracker that doesn't suck</name>
+    <assigned-to type="integer">220</assigned-to>
+    <created-at type="datetime">2011-02-23T03:44:47Z</created-at>
+    <public type="boolean">false</public>
+    <email-name>find-a-bug-tracker-that-doesnt-suck</email-name>
+    <public-heading></public-heading>
+    <updated-at type="datetime">2011-02-23T03:44:47Z</updated-at>
+    <default-priority-id type="integer" nil="true"></default-priority-id>
+    <created-by type="integer">219</created-by>
+    <enabled type="boolean">true</enabled>
+    <id type="integer">145</id>
+    <public-interface type="boolean">false</public-interface>
+    <max-response-time type="integer" nil="true"></max-response-time>
+    <default-category-id type="integer">431</default-category-id>
+    <description></description>
+    <public-message></public-message>
+  </project>
+</projects>
