@@ -22,6 +22,14 @@ class Bugly::Account
       map { |p| Bugly::Project.new(p) }
   end
   
+  def project(id)
+    Bugly::Project.new(
+      Bugly.get("/projects/#{id}.xml")["project"]
+    )
+  end
+  
+  # milestones
+  
   def milestones
     Bugly.
       get("/milestones.xml").
@@ -29,12 +37,29 @@ class Bugly::Account
       map { |p| Bugly::Milestone.new(p) }
   end
   
+  def milestone(id)
+    Bugly::Milestone.new(
+      Bugly.get("/milestones/#{id}.xml")["milestone"]
+    )
+  end
+  
+  
+  # views
+  
   def views
     Bugly.
       get("/views.xml").
       parsed_response["views"].
       map { |p| Bugly::View.new(p) }
   end
+  
+  def view(id)
+    Bugly::View.new(
+      Bugly.get("/views/#{id}.xml")["view"]
+    )
+  end
+  
+  # issues
   
   def issues
     Bugly.
@@ -47,6 +72,34 @@ class Bugly::Account
     Bugly::Issue.new(
       Bugly.get("/issues/#{id}.xml")["issue"]
     )
+  end
+  
+  def issues_in_project(project_id)
+    Bugly.
+      get("/projects/#{project_id}/issues.xml").
+      parsed_response["issues"].
+      map { |p| Bugly::Issue.new(p) }
+  end
+  
+  def issues_in_view(view_id)
+    Bugly.
+      get("/views/#{view_id}/issues.xml").
+      parsed_response["issues"].
+      map { |p| Bugly::Issue.new(p) }
+  end  
+  
+  def issues_in_milestone(milestone)
+    Bugly.
+      get("/milestones/#{milestone_id}/issues.xml").
+      parsed_response["issues"].
+      map { |p| Bugly::Issue.new(p) }
+  end
+  
+  def issues_matching(query)
+    Bugly.
+      get("/search.xml?q=#{query}").
+      parsed_response["issues"].
+      map { |p| Bugly::Issue.new(p) }
   end
   
 end
