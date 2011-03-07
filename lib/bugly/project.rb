@@ -17,6 +17,10 @@ class Bugly::Project < Hashie::Dash
   property :description
   property :public_message
 
+  def api_issues_url
+    "/projects/#{id}.xml"
+  end
+
   # Fetch all the issues on this project. Returns an array of Bugly::Issue
   # objects.
   def issues
@@ -28,12 +32,12 @@ class Bugly::Project < Hashie::Dash
 
   # Fetch all the milestones for this project. Returns an array of
   # Bugly::Milestone objects.
-  def milestones
-    Bugly.
-      get(api_milestones_url).
-      fetch("milestones", []).
-      map { |m| Bugly::Milestone.new(m) }
-  end
+  #def milestones
+  #  Bugly.
+  #    get(api_milestones_url).
+  #    fetch("milestones", []).
+  #    map { |m| Bugly::Milestone.new(m) }
+  #end
 
   # Fetch all the people linked to this project. Returns an array of
   # Bugly::Person objects.

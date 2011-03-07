@@ -1,36 +1,490 @@
-{
-  "issues": [
-    {
-      "number": 57,
-      "category_name": "Enhancement",
-      "priority": "Trivial",
-      "subject": "Donec vel neque",
-      "description": "Nam id libero quis ipsum feugiat elementum. Vivamus vitae mauris ut ipsum mattis malesuada. Sed vel massa. Mauris lobortis. Nunc egestas, massa id scelerisque dapibus, urna mi accumsan purus, vel aliquam nunc sapien eget nisi. Quisque vitae nibh. Proin interdum mollis leo. Fusce sed nisi. Integer ut tortor.",
-      "milestone_name": null,
-      "opener_name": "Adam Keys",
-      "assignee_name": "Garrett Dimon",
-      "status": "Open",
-      "url": "https://example.sifterapp.com/projects/189113590/issues/46809840",
-      "api_url": "https://example.sifterapp.com/api/projects/189113590/issues/46809840"
-    },
-    {
-      "number": 63,
-      "category_name": "Bug",
-      "priority": "Trivial",
-      "subject": "Sed lectus nunc, egestas tincidunt",
-      "description": "Proin dictum dignissim metus. Vivamus vel risus sed augue venenatis sodales. Quisque tempus dictum lorem. Sed a turpis eu turpis lobortis pellentesque. Nunc sem mi, ullamcorper non, dignissim eu, pellentesque eget, justo. Donec mollis neque quis tortor. In hac habitasse platea dictumst. Mauris at velit non erat scelerisque iaculis.",
-      "milestone_name": null,
-      "opener_name": "Adam Keys",
-      "assignee_name": null,
-      "status": "Open",
-      "url": "https://example.sifterapp.com/projects/189113590/issues/465769292",
-      "api_url": "https://example.sifterapp.com/api/projects/189113590/issues/465769292"
-    }
-  ],
-  "per_page": 10,
-  "page": 1,
-  "total_pages": 2,
-  "next_page_url": "https://example.sifterapp.com/api/projects/189113590/issues?per_page=10&page=1",
-  "previous_page_url": null
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<issues type="array">
+  <issue>
+    <assigned-to type="integer">220</assigned-to>
+    <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+    <milestone-id type="integer">143</milestone-id>
+    <body>Projects are a fundamental part of Bugly, and you should create one for every "thing" you want to track issues for, for example products.
 
+ Create projects [here](http://banksimple.bug.ly/projects?new=1)</body>
+    <priority-id type="integer">800</priority-id>
+    <public type="boolean">false</public>
+    <title>Create projects for the account</title>
+    <project-id type="integer">144</project-id>
+    <updated-at type="datetime">2011-03-06T22:55:55Z</updated-at>
+    <assigned-at type="datetime" nil="true"></assigned-at>
+    <created-by type="integer">219</created-by>
+    <category-id type="integer">427</category-id>
+    <updated-by type="integer" nil="true"></updated-by>
+    <assigned-by type="integer" nil="true"></assigned-by>
+    <status-id type="integer">400</status-id>
+    <project>
+      <name>Inbox</name>
+      <pid type="integer">142</pid>
+      <scm-changeset-url nil="true"></scm-changeset-url>
+      <scm-revision-log-url nil="true"></scm-revision-log-url>
+      <assigned-to type="integer">220</assigned-to>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <public type="boolean">false</public>
+      <scm-source-url nil="true"></scm-source-url>
+      <email-name nil="true"></email-name>
+      <mode type="integer" nil="true"></mode>
+      <public-heading nil="true"></public-heading>
+      <scm-diff-url nil="true"></scm-diff-url>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <default-priority-id type="integer" nil="true"></default-priority-id>
+      <created-by type="integer">219</created-by>
+      <enabled type="boolean">true</enabled>
+      <public-interface type="boolean">false</public-interface>
+      <max-response-time type="integer" nil="true"></max-response-time>
+      <default-category-id type="integer" nil="true"></default-category-id>
+      <description>This is the default project, created by the system. Feel free to rename it.</description>
+      <public-message nil="true"></public-message>
+    </project>
+    <milestone>
+      <name>Undecided</name>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <end-note nil="true"></end-note>
+      <end-at type="datetime" nil="true"></end-at>
+      <project-id type="integer" nil="true"></project-id>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <sort-order type="integer">100000</sort-order>
+      <created-by type="integer">219</created-by>
+      <start-at type="datetime" nil="true"></start-at>
+      <description>The default global milestone, with no start or end date</description>
+      <start-note nil="true"></start-note>
+    </milestone>
+    <category>
+      <name>Feature</name>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <default-user type="integer" nil="true"></default-user>
+      <project-id type="integer">144</project-id>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <created-by type="integer">219</created-by>
+      <description nil="true"></description>
+    </category>
+    <id>1</id>
+  </issue>
+  <issue>
+    <assigned-to type="integer">219</assigned-to>
+    <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+    <milestone-id type="integer">143</milestone-id>
+    <body>Here are a few resources to get you started with Bugly
+
+* [Getting Started](http://banksimple.bug.ly/help/getting_started)
+* [API Docs](http://banksimple.bug.ly/help/api)
+* [SCM Integration](http://banksimple.bug.ly/help/scm_integration)
+</body>
+    <priority-id type="integer">2000</priority-id>
+    <public type="boolean">false</public>
+    <title>Learn to use Bugly</title>
+    <project-id type="integer">144</project-id>
+    <updated-at type="datetime">2011-03-06T22:56:27Z</updated-at>
+    <assigned-at type="datetime" nil="true"></assigned-at>
+    <created-by type="integer">219</created-by>
+    <category-id type="integer" nil="true"></category-id>
+    <updated-by type="integer" nil="true"></updated-by>
+    <assigned-by type="integer" nil="true"></assigned-by>
+    <status-id type="integer">400</status-id>
+    <project>
+      <name>Inbox</name>
+      <pid type="integer">142</pid>
+      <scm-changeset-url nil="true"></scm-changeset-url>
+      <scm-revision-log-url nil="true"></scm-revision-log-url>
+      <assigned-to type="integer">220</assigned-to>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <public type="boolean">false</public>
+      <scm-source-url nil="true"></scm-source-url>
+      <email-name nil="true"></email-name>
+      <mode type="integer" nil="true"></mode>
+      <public-heading nil="true"></public-heading>
+      <scm-diff-url nil="true"></scm-diff-url>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <default-priority-id type="integer" nil="true"></default-priority-id>
+      <created-by type="integer">219</created-by>
+      <enabled type="boolean">true</enabled>
+      <public-interface type="boolean">false</public-interface>
+      <max-response-time type="integer" nil="true"></max-response-time>
+      <default-category-id type="integer" nil="true"></default-category-id>
+      <description>This is the default project, created by the system. Feel free to rename it.</description>
+      <public-message nil="true"></public-message>
+    </project>
+    <milestone>
+      <name>Undecided</name>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <end-note nil="true"></end-note>
+      <end-at type="datetime" nil="true"></end-at>
+      <project-id type="integer" nil="true"></project-id>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <sort-order type="integer">100000</sort-order>
+      <created-by type="integer">219</created-by>
+      <start-at type="datetime" nil="true"></start-at>
+      <description>The default global milestone, with no start or end date</description>
+      <start-note nil="true"></start-note>
+    </milestone>
+    <id>2</id>
+  </issue>
+  <issue>
+    <assigned-to type="integer">220</assigned-to>
+    <created-at type="datetime">2011-02-23T03:47:06Z</created-at>
+    <milestone-id type="integer">143</milestone-id>
+    <body># Optimize
+Make the code run faster
+# Profile
+Then work out how.
+# Develop
+Then write the code
+# Ideate.
+Come up with the idea for your now fastened code.</body>
+    <priority-id type="integer">200</priority-id>
+    <public type="boolean">false</public>
+    <title>Make it so that it runs faster</title>
+    <project-id type="integer">144</project-id>
+    <updated-at type="datetime">2011-03-06T22:55:55Z</updated-at>
+    <assigned-at type="datetime" nil="true"></assigned-at>
+    <created-by type="integer">219</created-by>
+    <category-id type="integer" nil="true"></category-id>
+    <updated-by type="integer">219</updated-by>
+    <assigned-by type="integer" nil="true"></assigned-by>
+    <status-id type="integer">400</status-id>
+    <project>
+      <name>Inbox</name>
+      <pid type="integer">142</pid>
+      <scm-changeset-url nil="true"></scm-changeset-url>
+      <scm-revision-log-url nil="true"></scm-revision-log-url>
+      <assigned-to type="integer">220</assigned-to>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <public type="boolean">false</public>
+      <scm-source-url nil="true"></scm-source-url>
+      <email-name nil="true"></email-name>
+      <mode type="integer" nil="true"></mode>
+      <public-heading nil="true"></public-heading>
+      <scm-diff-url nil="true"></scm-diff-url>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <default-priority-id type="integer" nil="true"></default-priority-id>
+      <created-by type="integer">219</created-by>
+      <enabled type="boolean">true</enabled>
+      <public-interface type="boolean">false</public-interface>
+      <max-response-time type="integer" nil="true"></max-response-time>
+      <default-category-id type="integer" nil="true"></default-category-id>
+      <description>This is the default project, created by the system. Feel free to rename it.</description>
+      <public-message nil="true"></public-message>
+    </project>
+    <milestone>
+      <name>Undecided</name>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <end-note nil="true"></end-note>
+      <end-at type="datetime" nil="true"></end-at>
+      <project-id type="integer" nil="true"></project-id>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <sort-order type="integer">100000</sort-order>
+      <created-by type="integer">219</created-by>
+      <start-at type="datetime" nil="true"></start-at>
+      <description>The default global milestone, with no start or end date</description>
+      <start-note nil="true"></start-note>
+    </milestone>
+    <id>3</id>
+  </issue>
+  <issue>
+    <assigned-to type="integer">220</assigned-to>
+    <created-at type="datetime">2011-02-23T03:49:33Z</created-at>
+    <milestone-id type="integer">143</milestone-id>
+    <body></body>
+    <priority-id type="integer">200</priority-id>
+    <public type="boolean">false</public>
+    <title>Work out dependencies</title>
+    <project-id type="integer">145</project-id>
+    <updated-at type="datetime">2011-03-06T22:55:56Z</updated-at>
+    <assigned-at type="datetime" nil="true"></assigned-at>
+    <created-by type="integer">219</created-by>
+    <category-id type="integer" nil="true"></category-id>
+    <updated-by type="integer">224</updated-by>
+    <assigned-by type="integer" nil="true"></assigned-by>
+    <status-id type="integer">400</status-id>
+    <project>
+      <name>Find a bug tracker that doesn't suck</name>
+      <pid type="integer">143</pid>
+      <scm-changeset-url></scm-changeset-url>
+      <scm-revision-log-url nil="true"></scm-revision-log-url>
+      <assigned-to type="integer">220</assigned-to>
+      <created-at type="datetime">2011-02-23T03:44:47Z</created-at>
+      <public type="boolean">false</public>
+      <scm-source-url></scm-source-url>
+      <email-name>find-a-bug-tracker-that-doesnt-suck</email-name>
+      <mode type="integer" nil="true"></mode>
+      <public-heading></public-heading>
+      <scm-diff-url nil="true"></scm-diff-url>
+      <updated-at type="datetime">2011-02-23T03:44:47Z</updated-at>
+      <default-priority-id type="integer" nil="true"></default-priority-id>
+      <created-by type="integer">219</created-by>
+      <enabled type="boolean">true</enabled>
+      <public-interface type="boolean">false</public-interface>
+      <max-response-time type="integer" nil="true"></max-response-time>
+      <default-category-id type="integer">431</default-category-id>
+      <description></description>
+      <public-message></public-message>
+    </project>
+    <milestone>
+      <name>Undecided</name>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <end-note nil="true"></end-note>
+      <end-at type="datetime" nil="true"></end-at>
+      <project-id type="integer" nil="true"></project-id>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <sort-order type="integer">100000</sort-order>
+      <created-by type="integer">219</created-by>
+      <start-at type="datetime" nil="true"></start-at>
+      <description>The default global milestone, with no start or end date</description>
+      <start-note nil="true"></start-note>
+    </milestone>
+    <id>4</id>
+  </issue>
+  <issue>
+    <assigned-to type="integer">219</assigned-to>
+    <created-at type="datetime">2011-02-23T03:54:18Z</created-at>
+    <milestone-id type="integer">143</milestone-id>
+    <body></body>
+    <priority-id type="integer">200</priority-id>
+    <public type="boolean">false</public>
+    <title>Do the damn thang</title>
+    <project-id type="integer">146</project-id>
+    <updated-at type="datetime">2011-03-06T22:56:28Z</updated-at>
+    <assigned-at type="datetime" nil="true"></assigned-at>
+    <created-by type="integer">221</created-by>
+    <category-id type="integer">433</category-id>
+    <updated-by type="integer" nil="true"></updated-by>
+    <assigned-by type="integer" nil="true"></assigned-by>
+    <status-id type="integer">400</status-id>
+    <project>
+      <name>Jackalope</name>
+      <pid type="integer">144</pid>
+      <scm-changeset-url></scm-changeset-url>
+      <scm-revision-log-url nil="true"></scm-revision-log-url>
+      <assigned-to type="integer">220</assigned-to>
+      <created-at type="datetime">2011-02-23T03:51:33Z</created-at>
+      <public type="boolean">false</public>
+      <scm-source-url></scm-source-url>
+      <email-name>jackalope</email-name>
+      <mode type="integer" nil="true"></mode>
+      <public-heading></public-heading>
+      <scm-diff-url nil="true"></scm-diff-url>
+      <updated-at type="datetime">2011-02-23T03:51:33Z</updated-at>
+      <default-priority-id type="integer" nil="true"></default-priority-id>
+      <created-by type="integer">221</created-by>
+      <enabled type="boolean">true</enabled>
+      <public-interface type="boolean">false</public-interface>
+      <max-response-time type="integer" nil="true"></max-response-time>
+      <default-category-id type="integer">434</default-category-id>
+      <description></description>
+      <public-message></public-message>
+    </project>
+    <milestone>
+      <name>Undecided</name>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <end-note nil="true"></end-note>
+      <end-at type="datetime" nil="true"></end-at>
+      <project-id type="integer" nil="true"></project-id>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <sort-order type="integer">100000</sort-order>
+      <created-by type="integer">219</created-by>
+      <start-at type="datetime" nil="true"></start-at>
+      <description>The default global milestone, with no start or end date</description>
+      <start-note nil="true"></start-note>
+    </milestone>
+    <category>
+      <name>Feature</name>
+      <created-at type="datetime">2011-02-23T03:51:33Z</created-at>
+      <default-user type="integer" nil="true"></default-user>
+      <project-id type="integer">146</project-id>
+      <updated-at type="datetime">2011-02-23T03:51:33Z</updated-at>
+      <created-by type="integer">221</created-by>
+      <description nil="true"></description>
+    </category>
+    <id>5</id>
+  </issue>
+  <issue>
+    <assigned-to type="integer">224</assigned-to>
+    <created-at type="datetime">2011-02-24T20:16:11Z</created-at>
+    <milestone-id type="integer">143</milestone-id>
+    <body>THIS IS IT</body>
+    <priority-id type="integer">800</priority-id>
+    <public type="boolean">false</public>
+    <title>most important issue ever</title>
+    <project-id type="integer">144</project-id>
+    <updated-at type="datetime">2011-03-06T22:56:28Z</updated-at>
+    <assigned-at type="datetime" nil="true"></assigned-at>
+    <created-by type="integer">224</created-by>
+    <category-id type="integer">427</category-id>
+    <updated-by type="integer" nil="true"></updated-by>
+    <assigned-by type="integer" nil="true"></assigned-by>
+    <status-id type="integer">400</status-id>
+    <project>
+      <name>Inbox</name>
+      <pid type="integer">142</pid>
+      <scm-changeset-url nil="true"></scm-changeset-url>
+      <scm-revision-log-url nil="true"></scm-revision-log-url>
+      <assigned-to type="integer">220</assigned-to>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <public type="boolean">false</public>
+      <scm-source-url nil="true"></scm-source-url>
+      <email-name nil="true"></email-name>
+      <mode type="integer" nil="true"></mode>
+      <public-heading nil="true"></public-heading>
+      <scm-diff-url nil="true"></scm-diff-url>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <default-priority-id type="integer" nil="true"></default-priority-id>
+      <created-by type="integer">219</created-by>
+      <enabled type="boolean">true</enabled>
+      <public-interface type="boolean">false</public-interface>
+      <max-response-time type="integer" nil="true"></max-response-time>
+      <default-category-id type="integer" nil="true"></default-category-id>
+      <description>This is the default project, created by the system. Feel free to rename it.</description>
+      <public-message nil="true"></public-message>
+    </project>
+    <milestone>
+      <name>Undecided</name>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <end-note nil="true"></end-note>
+      <end-at type="datetime" nil="true"></end-at>
+      <project-id type="integer" nil="true"></project-id>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <sort-order type="integer">100000</sort-order>
+      <created-by type="integer">219</created-by>
+      <start-at type="datetime" nil="true"></start-at>
+      <description>The default global milestone, with no start or end date</description>
+      <start-note nil="true"></start-note>
+    </milestone>
+    <category>
+      <name>Feature</name>
+      <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+      <default-user type="integer" nil="true"></default-user>
+      <project-id type="integer">144</project-id>
+      <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+      <created-by type="integer">219</created-by>
+      <description nil="true"></description>
+    </category>
+    <id>6</id>
+  </issue>
+<issue>
+  <assigned-to type="integer">220</assigned-to>
+  <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+  <milestone-id type="integer">143</milestone-id>
+  <body>Projects are a fundamental part of Bugly, and you should create one for every "thing" you want to track issues for, for example products.
+
+ Create projects [here](http://banksimple.bug.ly/projects?new=1)</body>
+  <priority-id type="integer">800</priority-id>
+  <public type="boolean">false</public>
+  <title>Create projects for the account</title>
+  <project-id type="integer">144</project-id>
+  <updated-at type="datetime">2011-03-06T22:55:55Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <created-by type="integer">219</created-by>
+  <category-id type="integer">427</category-id>
+  <updated-by type="integer" nil="true"></updated-by>
+  <assigned-by type="integer" nil="true"></assigned-by>
+  <status-id type="integer">400</status-id>
+  <id>1</id>
+</issue>
+<issue>
+  <assigned-to type="integer">219</assigned-to>
+  <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+  <milestone-id type="integer">143</milestone-id>
+  <body>Here are a few resources to get you started with Bugly
+
+* [Getting Started](http://banksimple.bug.ly/help/getting_started)
+* [API Docs](http://banksimple.bug.ly/help/api)
+* [SCM Integration](http://banksimple.bug.ly/help/scm_integration)
+</body>
+  <priority-id type="integer">2000</priority-id>
+  <public type="boolean">false</public>
+  <title>Learn to use Bugly</title>
+  <project-id type="integer">144</project-id>
+  <updated-at type="datetime">2011-03-06T22:56:27Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <created-by type="integer">219</created-by>
+  <category-id type="integer" nil="true"></category-id>
+  <updated-by type="integer" nil="true"></updated-by>
+  <assigned-by type="integer" nil="true"></assigned-by>
+  <status-id type="integer">400</status-id>
+  <id>2</id>
+</issue>
+<issue>
+  <assigned-to type="integer">220</assigned-to>
+  <created-at type="datetime">2011-02-23T03:47:06Z</created-at>
+  <milestone-id type="integer">143</milestone-id>
+  <body># Optimize
+Make the code run faster
+# Profile
+Then work out how.
+# Develop
+Then write the code
+# Ideate.
+Come up with the idea for your now fastened code.</body>
+  <priority-id type="integer">200</priority-id>
+  <public type="boolean">false</public>
+  <title>Make it so that it runs faster</title>
+  <project-id type="integer">144</project-id>
+  <updated-at type="datetime">2011-03-06T22:55:55Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <created-by type="integer">219</created-by>
+  <category-id type="integer" nil="true"></category-id>
+  <updated-by type="integer">219</updated-by>
+  <assigned-by type="integer" nil="true"></assigned-by>
+  <status-id type="integer">400</status-id>
+  <id>3</id>
+</issue>
+<issue>
+  <assigned-to type="integer">220</assigned-to>
+  <created-at type="datetime">2011-02-23T03:49:33Z</created-at>
+  <milestone-id type="integer">143</milestone-id>
+  <body></body>
+  <priority-id type="integer">200</priority-id>
+  <public type="boolean">false</public>
+  <title>Work out dependencies</title>
+  <project-id type="integer">145</project-id>
+  <updated-at type="datetime">2011-03-06T22:55:56Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <created-by type="integer">219</created-by>
+  <category-id type="integer" nil="true"></category-id>
+  <updated-by type="integer">224</updated-by>
+  <assigned-by type="integer" nil="true"></assigned-by>
+  <status-id type="integer">400</status-id>
+  <id>4</id>
+</issue>
+<issue>
+  <assigned-to type="integer">219</assigned-to>
+  <created-at type="datetime">2011-02-23T03:54:18Z</created-at>
+  <milestone-id type="integer">143</milestone-id>
+  <body></body>
+  <priority-id type="integer">200</priority-id>
+  <public type="boolean">false</public>
+  <title>Do the damn thang</title>
+  <project-id type="integer">146</project-id>
+  <updated-at type="datetime">2011-03-06T22:56:28Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <created-by type="integer">221</created-by>
+  <category-id type="integer">433</category-id>
+  <updated-by type="integer" nil="true"></updated-by>
+  <assigned-by type="integer" nil="true"></assigned-by>
+  <status-id type="integer">400</status-id>
+  <id>5</id>
+</issue>
+<issue>
+  <assigned-to type="integer">224</assigned-to>
+  <created-at type="datetime">2011-02-24T20:16:11Z</created-at>
+  <milestone-id type="integer">143</milestone-id>
+  <body>THIS IS IT</body>
+  <priority-id type="integer">800</priority-id>
+  <public type="boolean">false</public>
+  <title>most important issue ever</title>
+  <project-id type="integer">144</project-id>
+  <updated-at type="datetime">2011-03-06T22:56:28Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <created-by type="integer">224</created-by>
+  <category-id type="integer">427</category-id>
+  <updated-by type="integer" nil="true"></updated-by>
+  <assigned-by type="integer" nil="true"></assigned-by>
+  <status-id type="integer">400</status-id>
+  <id>6</id>
+</issue>
+</issues>

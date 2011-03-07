@@ -1,18 +1,31 @@
-{
-  "milestones": [
-    {
-      "name": "Private Release",
-      "due_date": "2010/04/15",
-      "issues_url": "https://example.sifterapp.com/projects/189113590/issues?m=1",
-      "api_issues_url": "https://example.sifterapp.com/api/projects/189113590/issues?m=1"
-    },
-    {
-      "name": "Public Release",
-      "due_date": "2010/05/15",
-      "issues_url": "https://example.sifterapp.com/projects/189113590/issues?m=2",
-      "api_issues_url": "https://example.sifterapp.com/api/projects/189113590/issues?m=2"
-    }
-
-  ]
-}
-
+<?xml version="1.0" encoding="UTF-8"?>
+<milestones type="array">
+  <milestone>
+    <name>it's perfect</name>
+    <created-at type="datetime">2011-03-07T00:16:18Z</created-at>
+    <end-note nil="true"></end-note>
+    <end-at type="datetime" nil="true"></end-at>
+    <project-id type="integer">144</project-id>
+    <updated-at type="datetime">2011-03-07T00:16:18Z</updated-at>
+    <sort-order type="integer">100000</sort-order>
+    <id type="integer">154</id>
+    <start-at type="datetime" nil="true"></start-at>
+    <description nil="true"></description>
+    <start-note nil="true"></start-note>
+    <created-by id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</created-by>
+  </milestone>
+  <milestone>
+    <name>Undecided</name>
+    <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+    <end-note nil="true"></end-note>
+    <end-at type="datetime" nil="true"></end-at>
+    <project-id type="integer" nil="true"></project-id>
+    <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+    <sort-order type="integer">100000</sort-order>
+    <id type="integer">143</id>
+    <start-at type="datetime" nil="true"></start-at>
+    <description>The default global milestone, with no start or end date</description>
+    <start-note nil="true"></start-note>
+    <created-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</created-by>
+  </milestone>
+</milestones>

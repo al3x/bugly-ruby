@@ -2,14 +2,12 @@
 <projects type="array">
   <project>
     <name>Inbox</name>
-    <assigned-to type="integer">220</assigned-to>
     <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
     <public type="boolean">false</public>
     <email-name nil="true"></email-name>
     <public-heading nil="true"></public-heading>
     <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
     <default-priority-id type="integer" nil="true"></default-priority-id>
-    <created-by type="integer">219</created-by>
     <enabled type="boolean">true</enabled>
     <id type="integer">144</id>
     <public-interface type="boolean">false</public-interface>
@@ -17,17 +15,17 @@
     <default-category-id type="integer" nil="true"></default-category-id>
     <description>This is the default project, created by the system. Feel free to rename it.</description>
     <public-message nil="true"></public-message>
+    <assigned-to id="f81eb260ea85646d9a8a2ea4c39b90462d41b65b">Unassigned</assigned-to>
+    <created-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</created-by>
   </project>
   <project>
     <name>Find a bug tracker that doesn't suck</name>
-    <assigned-to type="integer">220</assigned-to>
     <created-at type="datetime">2011-02-23T03:44:47Z</created-at>
     <public type="boolean">false</public>
     <email-name>find-a-bug-tracker-that-doesnt-suck</email-name>
     <public-heading></public-heading>
     <updated-at type="datetime">2011-02-23T03:44:47Z</updated-at>
     <default-priority-id type="integer" nil="true"></default-priority-id>
-    <created-by type="integer">219</created-by>
     <enabled type="boolean">true</enabled>
     <id type="integer">145</id>
     <public-interface type="boolean">false</public-interface>
@@ -35,5 +33,25 @@
     <default-category-id type="integer">431</default-category-id>
     <description></description>
     <public-message></public-message>
+    <assigned-to id="f81eb260ea85646d9a8a2ea4c39b90462d41b65b">Unassigned</assigned-to>
+    <created-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</created-by>
+  </project>
+  <project>
+    <name>Jackalope</name>
+    <created-at type="datetime">2011-02-23T03:51:33Z</created-at>
+    <public type="boolean">false</public>
+    <email-name>jackalope</email-name>
+    <public-heading></public-heading>
+    <updated-at type="datetime">2011-02-23T03:51:33Z</updated-at>
+    <default-priority-id type="integer" nil="true"></default-priority-id>
+    <enabled type="boolean">true</enabled>
+    <id type="integer">146</id>
+    <public-interface type="boolean">false</public-interface>
+    <max-response-time type="integer" nil="true"></max-response-time>
+    <default-category-id type="integer">434</default-category-id>
+    <description></description>
+    <public-message></public-message>
+    <assigned-to id="f81eb260ea85646d9a8a2ea4c39b90462d41b65b">Unassigned</assigned-to>
+    <created-by id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</created-by>
   </project>
 </projects>

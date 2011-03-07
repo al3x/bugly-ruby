@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<views type="array">
+  <view>
+    <name>Unassigned</name>
+    <created-at type="datetime">2011-02-23T03:44:36Z</created-at>
+    <updated-at type="datetime">2011-02-23T03:44:36Z</updated-at>
+    <warn-if-higher type="integer">0</warn-if-higher>
+    <id type="integer">241</id>
+    <warn-if-lower type="integer" nil="true"></warn-if-lower>
+    <description>Need to be assigned to a person. Should be empty</description>
+  </view>
+  <view>
+    <name>All Issues</name>
+    <created-at type="datetime">2011-02-23T03:44:36Z</created-at>
+    <updated-at type="datetime">2011-02-23T03:44:36Z</updated-at>
+    <warn-if-higher type="integer" nil="true"></warn-if-higher>
+    <id type="integer">242</id>
+    <warn-if-lower type="integer" nil="true"></warn-if-lower>
+    <description>Lists all issues. Edit filters by clicking the Edit View button</description>
+  </view>
+  <view>
+    <name>Everything assigned to Alex</name>
+    <created-at type="datetime">2011-03-07T00:19:25Z</created-at>
+    <updated-at type="datetime">2011-03-07T00:19:25Z</updated-at>
+    <warn-if-higher type="integer" nil="true"></warn-if-higher>
+    <id type="integer">260</id>
+    <warn-if-lower type="integer" nil="true"></warn-if-lower>
+    <description></description>
+  </view>
+</views>

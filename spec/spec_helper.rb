@@ -1,15 +1,14 @@
 require "fakeweb"
-require "sifter"
+require "bugly"
 
 FakeWeb.allow_net_connect = false
 
 RSpec.configure do
-
   # Gratuitously borrowed from Wynn Netherland's gowalla gem
   def stub_get(url, filename, options={})
     opts = {
       :body => fixture_file(filename),
-      :content_type => 'application/json; charset=utf-8'
+      :content_type => 'application/xml; charset=utf-8'
     }.merge(options)
     FakeWeb.register_uri(:get, sifter_url(url), opts)
   end
@@ -23,7 +22,6 @@ RSpec.configure do
   end
 
   def sifter_url(url)
-    url =~ /^http/ ? url : "https://example.sifterapp.com#{url}"
+    url =~ /^http/ ? url : "http://example.bug.ly#{url}"
   end
-
 end

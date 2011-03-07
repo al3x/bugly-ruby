@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issue>
+  <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+  <body>Projects are a fundamental part of Bugly, and you should create one for every "thing" you want to track issues for, for example products.
+
+ Create projects [here](http://banksimple.bug.ly/projects?new=1)</body>
+  <public type="boolean">false</public>
+  <title>Create projects for the account</title>
+  <updated-at type="datetime">2011-03-06T22:55:55Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <id>1</id>
+  <assigned-to id="f81eb260ea85646d9a8a2ea4c39b90462d41b65b">Unassigned</assigned-to>
+  <created-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</created-by>
+  <category id="427">Feature</category>
+  <milestone id="143">Undecided</milestone>
+  <project id="144">Inbox</project>
+  <status id="400">Closed</status>
+  <priority id="800">Important</priority>
+</issue>
