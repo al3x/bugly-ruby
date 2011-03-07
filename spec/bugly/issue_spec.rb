@@ -5,11 +5,13 @@ describe Bugly::Issue do
   before do
     stub_get('/projects.xml', 'projects.xml')
     stub_get('/milestones/154.xml', 'milestone_154.xml')
+    stub_get('/views/242.xml', 'view_242.xml')
   end
 
   let(:account) { Bugly::Account.new('example.bug.ly', 'abc123') }
   let(:project) { account.projects.select { |p| p.id == 146 }.first }
   let(:milestone) { account.milestone(154) }
+  let(:view) { account.view(242) }
   
   it 'fetches all issues' do
     stub_get('/issues.xml', 'issues.xml')
@@ -42,6 +44,13 @@ describe Bugly::Issue do
 
     issues = milestone.issues
     issues.length.should == 2
+  end
+
+  it 'fetches issues for a specific view' do
+    stub_get(view.view_issues_url, 'view_242_issues.xml')
+
+    issues = view.issues
+    issues.length.should == 8
   end
   
 end

@@ -7,6 +7,7 @@ class Bugly::View < Hashie::Dash
   property :id
   property :warn_if_lower
   property :description
+  property :issues
 
   def view_issues_url
     "/views/#{id}/issues.xml"
