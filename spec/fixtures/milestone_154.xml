@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<milestone>
+  <name>it's perfect</name>
+  <created-at type="datetime">2011-03-07T00:16:18Z</created-at>
+  <end-note nil="true"></end-note>
+  <end-at type="datetime" nil="true"></end-at>
+  <project-id type="integer">144</project-id>
+  <updated-at type="datetime">2011-03-07T00:16:18Z</updated-at>
+  <sort-order type="integer">100000</sort-order>
+  <id type="integer">154</id>
+  <start-at type="datetime" nil="true"></start-at>
+  <description nil="true"></description>
+  <start-note nil="true"></start-note>
+  <created-by id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</created-by>
+</milestone>
