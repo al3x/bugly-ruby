@@ -52,5 +52,12 @@ describe Bugly::Issue do
     issues = view.issues
     issues.length.should == 8
   end
+
+  it 'fetches issues for a single-term query' do
+    stub_get('/search.xml?q=alex', 'search_alex.xml')
+
+    issues = account.issues_matching("alex")
+    issues.length.should == 3
+  end
   
 end
