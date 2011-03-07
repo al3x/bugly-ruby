@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+  <name>All Issues</name>
+  <created-at type="datetime">2011-02-23T03:44:36Z</created-at>
+  <updated-at type="datetime">2011-02-23T03:44:36Z</updated-at>
+  <warn-if-higher type="integer" nil="true"></warn-if-higher>
+  <id type="integer">242</id>
+  <warn-if-lower type="integer" nil="true"></warn-if-lower>
+  <description>Lists all issues. Edit filters by clicking the Edit View button</description>
+  <issues>
+<issue>
+  <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+  <body>Projects are a fundamental part of Bugly, and you should create one for every "thing" you want to track issues for, for example products.
+
+ Create projects [here](http://banksimple.bug.ly/projects?new=1)</body>
+  <public type="boolean">false</public>
+  <title>Create projects for the account</title>
+  <updated-at type="datetime">2011-03-06T22:55:55Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <id>1</id>
+  <assigned-to id="f81eb260ea85646d9a8a2ea4c39b90462d41b65b">Unassigned</assigned-to>
+  <created-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</created-by>
+  <category id="427">Feature</category>
+  <milestone id="143">Undecided</milestone>
+  <project id="144">Inbox</project>
+  <status id="400">Closed</status>
+  <priority id="800">Important</priority>
+</issue>
+<issue>
+  <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+  <body>Here are a few resources to get you started with Bugly
+
+* [Getting Started](http://banksimple.bug.ly/help/getting_started)
+* [API Docs](http://banksimple.bug.ly/help/api)
+* [SCM Integration](http://banksimple.bug.ly/help/scm_integration)
+</body>
+  <public type="boolean">false</public>
+  <title>Learn to use Bugly</title>
+  <updated-at type="datetime">2011-03-06T22:56:27Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <id>2</id>
+  <assigned-to id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</assigned-to>
+  <created-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</created-by>
+  <milestone id="143">Undecided</milestone>
+  <project id="144">Inbox</project>
+  <status id="400">Closed</status>
+  <priority id="2000">Low</priority>
+</issue>
+<issue>
+  <created-at type="datetime">2011-02-23T03:47:06Z</created-at>
+  <body># Optimize
+Make the code run faster
+# Profile
+Then work out how.
+# Develop
+Then write the code
+# Ideate.
+Come up with the idea for your now fastened code.</body>
+  <public type="boolean">false</public>
+  <title>Make it so that it runs faster</title>
+  <updated-at type="datetime">2011-03-06T22:55:55Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <id>3</id>
+  <assigned-to id="f81eb260ea85646d9a8a2ea4c39b90462d41b65b">Unassigned</assigned-to>
+  <created-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</created-by>
+  <updated-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</updated-by>
+  <milestone id="143">Undecided</milestone>
+  <project id="144">Inbox</project>
+  <status id="400">Closed</status>
+  <priority id="200">Critical</priority>
+</issue>
+<issue>
+  <created-at type="datetime">2011-02-23T03:49:33Z</created-at>
+  <body></body>
+  <public type="boolean">false</public>
+  <title>Work out dependencies</title>
+  <updated-at type="datetime">2011-03-06T22:55:56Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <id>4</id>
+  <assigned-to id="f81eb260ea85646d9a8a2ea4c39b90462d41b65b">Unassigned</assigned-to>
+  <created-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</created-by>
+  <updated-by id="22c7a68cc817d09cb06b75ccbcb44c771571b1ef">Ted Nyman</updated-by>
+  <milestone id="143">Undecided</milestone>
+  <project id="145">Find a bug tracker that doesn't suck</project>
+  <status id="400">Closed</status>
+  <priority id="200">Critical</priority>
+</issue>
+<issue>
+  <created-at type="datetime">2011-02-23T03:54:18Z</created-at>
+  <body></body>
+  <public type="boolean">false</public>
+  <title>Do the damn thang</title>
+  <updated-at type="datetime">2011-03-06T22:56:28Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <id>5</id>
+  <assigned-to id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</assigned-to>
+  <created-by id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</created-by>
+  <category id="433">Feature</category>
+  <milestone id="143">Undecided</milestone>
+  <project id="146">Jackalope</project>
+  <status id="400">Closed</status>
+  <priority id="200">Critical</priority>
+</issue>
+<issue>
+  <created-at type="datetime">2011-02-24T20:16:11Z</created-at>
+  <body>THIS IS IT</body>
+  <public type="boolean">false</public>
+  <title>most important issue ever</title>
+  <updated-at type="datetime">2011-03-06T22:56:28Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <id>6</id>
+  <assigned-to id="22c7a68cc817d09cb06b75ccbcb44c771571b1ef">Ted Nyman</assigned-to>
+  <created-by id="22c7a68cc817d09cb06b75ccbcb44c771571b1ef">Ted Nyman</created-by>
+  <category id="427">Feature</category>
+  <milestone id="143">Undecided</milestone>
+  <project id="144">Inbox</project>
+  <status id="400">Closed</status>
+  <priority id="800">Important</priority>
+</issue>
+<issue>
+  <created-at type="datetime">2011-03-07T00:21:48Z</created-at>
+  <body>a thing</body>
+  <public type="boolean">false</public>
+  <title>testing</title>
+  <updated-at type="datetime">2011-03-07T00:21:48Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <id>7</id>
+  <assigned-to id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</assigned-to>
+  <created-by id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</created-by>
+  <category id="426">Bug</category>
+  <milestone id="154">it's perfect</milestone>
+  <project id="144">Inbox</project>
+  <status id="200">Open</status>
+  <priority id="1400">Normal</priority>
+</issue>
+<issue>
+  <created-at type="datetime">2011-03-07T19:11:52Z</created-at>
+  <body>blah blah</body>
+  <public type="boolean">false</public>
+  <title>make Alex do stuff</title>
+  <updated-at type="datetime">2011-03-07T19:11:52Z</updated-at>
+  <assigned-at type="datetime" nil="true"></assigned-at>
+  <id>8</id>
+  <assigned-to id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</assigned-to>
+  <created-by id="fe1b272a8d95c329a0b087a760816599066505d7">Bill DeRouchey</created-by>
+  <category id="427">Feature</category>
+  <milestone id="154">it's perfect</milestone>
+  <project id="144">Inbox</project>
+  <status id="200">Open</status>
+  <priority id="800">Important</priority>
+</issue>
+  </issues>
+</view>

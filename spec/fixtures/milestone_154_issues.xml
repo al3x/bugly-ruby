@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues type="array">
+  <issue>
+    <created-at type="datetime">2011-03-07T00:21:48Z</created-at>
+    <body>a thing</body>
+    <public type="boolean">false</public>
+    <title>testing</title>
+    <updated-at type="datetime">2011-03-07T00:21:48Z</updated-at>
+    <assigned-at type="datetime" nil="true"></assigned-at>
+    <id>7</id>
+    <assigned-to id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</assigned-to>
+    <created-by id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</created-by>
+    <category id="426">Bug</category>
+    <milestone id="154">it's perfect</milestone>
+    <project id="144">Inbox</project>
+    <status id="200">Open</status>
+    <priority id="1400">Normal</priority>
+  </issue>
+  <issue>
+    <created-at type="datetime">2011-03-07T19:11:52Z</created-at>
+    <body>blah blah</body>
+    <public type="boolean">false</public>
+    <title>make Alex do stuff</title>
+    <updated-at type="datetime">2011-03-07T19:11:52Z</updated-at>
+    <assigned-at type="datetime" nil="true"></assigned-at>
+    <id>8</id>
+    <assigned-to id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</assigned-to>
+    <created-by id="fe1b272a8d95c329a0b087a760816599066505d7">Bill DeRouchey</created-by>
+    <category id="427">Feature</category>
+    <milestone id="154">it's perfect</milestone>
+    <project id="144">Inbox</project>
+    <status id="200">Open</status>
+    <priority id="800">Important</priority>
+  </issue>
+</issues>

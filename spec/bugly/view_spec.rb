@@ -14,4 +14,8 @@ describe Bugly::View do
     unassigned.should be_kind_of(Bugly::View)
     unassigned.name.should == 'Unassigned'
   end
+  
+  it "fetches a specific view" do
+    stub_get('/views/')
+  end
 end
