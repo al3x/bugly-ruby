@@ -73,27 +73,7 @@ class Bugly::Account
       Bugly.get("/issues/#{id}.xml")["issue"]
     )
   end
-  
-  def issues_in_project(project_id)
-    Bugly.
-      get("/projects/#{project_id}/issues.xml").
-      parsed_response["issues"].
-      map { |p| Bugly::Issue.new(p) }
-  end
-  
-  def issues_in_view(view_id)
-    Bugly.
-      get("/views/#{view_id}/issues.xml").
-      parsed_response["issues"].
-      map { |p| Bugly::Issue.new(p) }
-  end  
-  
-  def issues_in_milestone(milestone)
-    Bugly.
-      get("/milestones/#{milestone_id}/issues.xml").
-      parsed_response["issues"].
-      map { |p| Bugly::Issue.new(p) }
-  end
+
   
   def issues_matching(query)
     Bugly.

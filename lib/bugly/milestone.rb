@@ -10,5 +10,16 @@ class Bugly::Milestone < Hashie::Dash
   property :start_at
   property :description
   property :start_note
-  property :created_by  
+  property :created_by
+
+  def milestone_issues_url
+    "/milestones/#{id}/issues.xml"
+  end
+
+  def issues
+    Bugly.
+      get(milestone_issues_url).
+      parsed_response["issues"].
+      map { |p| Bugly::Issue.new(p) }
+  end
 end

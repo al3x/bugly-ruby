@@ -1,5 +1,6 @@
 # Wrapper for a Bugly project. Fetch projects using Bugly::Account.
 class Bugly::Project < Hashie::Dash
+  
   property :name
   property :assigned_to
   property :created_at
@@ -18,7 +19,7 @@ class Bugly::Project < Hashie::Dash
   property :public_message
 
   def api_issues_url
-    "/projects/#{id}.xml"
+    "/projects/#{id}/issues.xml"
   end
 
   # Fetch all the issues on this project. Returns an array of Bugly::Issue
@@ -29,23 +30,5 @@ class Bugly::Project < Hashie::Dash
       fetch("issues", []).
       map { |i| Bugly::Issue.new(i) }
   end
-
-  # Fetch all the milestones for this project. Returns an array of
-  # Bugly::Milestone objects.
-  #def milestones
-  #  Bugly.
-  #    get(api_milestones_url).
-  #    fetch("milestones", []).
-  #    map { |m| Bugly::Milestone.new(m) }
-  #end
-
-  # Fetch all the people linked to this project. Returns an array of
-  # Bugly::Person objects.
-  #def people
-  #  Bugly.
-  #    get(api_people_url).
-  #    fetch("people", []).
-  #    map { |p| Bugly::Person.new(p) }
-  #end
-
+  
 end
