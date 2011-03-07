@@ -59,5 +59,12 @@ describe Bugly::Issue do
     issues = account.issues_matching("alex")
     issues.length.should == 3
   end
+
+  it 'fetches issues for a multi-term query' do
+    stub_get('/search.xml?q=alex+josh', 'search_alex_josh.xml')
+
+    issues = account.issues_matching("alex josh")
+    issues.length.should == 1
+  end
   
 end

@@ -1,3 +1,5 @@
+require 'cgi'
+
 # Wrapper around an a Bugly account. Use this as the root for accessing the
 # Bugly API.
 class Bugly::Account
@@ -76,8 +78,10 @@ class Bugly::Account
 
   
   def issues_matching(query)
+    sanitized_query = CGI.escape(query)
+
     Bugly.
-      get("/search.xml?q=#{query}").
+      get("/search.xml?q=#{sanitized_query}").
       parsed_response["issues"].
       map { |p| Bugly::Issue.new(p) }
   end

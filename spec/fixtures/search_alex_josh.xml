@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues type="array">
+  <issue>
+    <created-at type="datetime">2011-02-23T03:54:18Z</created-at>
+    <body></body>
+    <public type="boolean">false</public>
+    <title>Do the damn thang</title>
+    <updated-at type="datetime">2011-03-06T22:56:28Z</updated-at>
+    <assigned-at type="datetime" nil="true"></assigned-at>
+    <id>5</id>
+    <assigned-to id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</assigned-to>
+    <created-by id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</created-by>
+    <category id="433">Feature</category>
+    <milestone id="143">Undecided</milestone>
+    <project id="146">Jackalope</project>
+    <status id="400">Closed</status>
+    <priority id="200">Critical</priority>
+  </issue>
+</issues>
