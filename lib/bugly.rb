@@ -9,4 +9,5 @@ class Bugly
   autoload :Issue, "bugly/issue"
   autoload :Milestone, "bugly/milestone"
   autoload :View, "bugly/view"
+  autoload :Category, "bugly/category"
 end

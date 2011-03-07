@@ -20,11 +20,6 @@ describe Bugly::Project do
     inbox_project.name.should == 'Inbox'
   end
   
-  it "initializes a single project from fixture" do
-    project.id.should == 145
-    project.name.should == "Find a bug tracker that doesn't suck"
-  end 
-  
   it "fetches a specific project" do
     stub_get("/projects/146.xml", "project_146.xml")
     

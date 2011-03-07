@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<category>
+  <name>Bug</name>
+  <created-at type="datetime">2011-02-23T03:43:02Z</created-at>
+  <updated-at type="datetime">2011-02-23T03:43:02Z</updated-at>
+  <id type="integer">426</id>
+  <description nil="true"></description>
+  <created-by id="cfef29341551ebf73cbbca250ae8d9d649df103e">Joshua Reich</created-by>
+  <project id="144">Inbox</project>
+</category>

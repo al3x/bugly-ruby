@@ -60,6 +60,21 @@ class Bugly::Account
       Bugly.get("/views/#{id}.xml")["view"]
     )
   end
+
+  # categories
+
+  def categories
+    Bugly.
+      get("/categories.xml").
+      parsed_response["categories"].
+      map { |p| Bugly::Category.new(p) }
+  end
+
+  def category(id)
+    Bugly::Category.new(
+      Bugly.get("/categories/#{id}.xml")["category"]
+    )
+  end
   
   # issues
   

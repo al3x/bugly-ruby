@@ -16,6 +16,9 @@ describe Bugly::View do
   end
   
   it "fetches a specific view" do
-    stub_get('/views/')
+    stub_get('/views/242.xml', 'view_242.xml')
+
+    view = account.view(242)
+    view.should be_kind_of(Bugly::View)
   end
 end
