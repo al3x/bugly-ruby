@@ -24,4 +24,8 @@ class Bugly::Issue < Bugly::SerializableDash
   property :category
   property :project
   property :milestone
+
+  def self.create(issue)
+    Bugly.post('/issues.xml', { :body => issue.to_xml })
+  end
 end
