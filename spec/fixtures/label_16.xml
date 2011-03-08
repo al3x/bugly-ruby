@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<label>
+  <name>dependency</name>
+  <created-at type="datetime">2011-02-23T04:03:41Z</created-at>
+  <public type="boolean">false</public>
+  <public-heading nil="true"></public-heading>
+  <updated-at type="datetime">2011-02-23T04:03:41Z</updated-at>
+  <public-description nil="true"></public-description>
+  <color>aaaaaa</color>
+  <id type="integer">16</id>
+  <text-color>ffffff</text-color>
+  <public-show-history type="boolean">false</public-show-history>
+  <created-by id="03c42ae0d55e4a4d237a351169c3da47b8dfee4b">Alex Payne</created-by>
+  <project id="145">Find a bug tracker that doesn't suck</project>
+</label>

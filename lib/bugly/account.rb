@@ -90,6 +90,22 @@ class Bugly::Account
       Bugly.get("/users/#{id}.xml")["user"]
     )
   end
+
+  # labels
+
+  def labels
+    Bugly.
+      get("/labels.xml").
+      parsed_response["labels"].
+      map { |p| Bugly::Label.new(p) }
+  end
+
+  def label(id)
+    Bugly::Label.new(
+      Bugly.get("/labels/#{id}.xml")["label"]
+    )
+  end
+
   
   # issues
   

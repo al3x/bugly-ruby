@@ -11,4 +11,5 @@ class Bugly
   autoload :View, "bugly/view"
   autoload :Category, "bugly/category"
   autoload :User, "bugly/user"
+  autoload :Label, "bugly/label"
 end
