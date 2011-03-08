@@ -2,5 +2,20 @@ h1. Introduction
 
 This is a Ruby library for accessing the "Bugly":http://bug.ly REST API.
 
-It's shamelessly ripped off of "sifter-ruby":https://github.com/nextupdate/sifter-ruby by "Adam Keys":https://github.com/nextupdate/sifter-ruby, right down to the project structure.
+h1. Supported Resources
 
+The library currently supports *reading* all documented API-accessible resources:
+
+* Issues
+* Projects
+* Milestones
+* Categories
+* Labels
+* Views
+* Users
+
+h1. Authors
+
+"Alex Payne":http://al3x.net/ is the primary author.
+
+This whole library is shamelessly ripped off of "sifter-ruby":https://github.com/nextupdate/sifter-ruby by "Adam Keys":https://github.com/nextupdate/sifter-ruby, right down to the project structure.
