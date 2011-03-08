@@ -1,4 +1,4 @@
-class Bugly::Milestone < Hashie::Dash
+class Bugly::Milestone < Bugly::SerializableDash
   property :name
   property :created_at
   property :end_note

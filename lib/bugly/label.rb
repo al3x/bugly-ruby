@@ -1,4 +1,4 @@
-class Bugly::Label < Hashie::Dash
+class Bugly::Label < Bugly::SerializableDash
   property :name
   property :created_at
   property :public

@@ -1,5 +1,5 @@
 # Wrapper for a Bugly project. Fetch projects using Bugly::Account.
-class Bugly::Project < Hashie::Dash
+class Bugly::Project < Bugly::SerializableDash
   
   property :name
   property :assigned_to

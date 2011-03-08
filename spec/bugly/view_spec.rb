@@ -21,4 +21,12 @@ describe Bugly::View do
     view = account.view(242)
     view.should be_kind_of(Bugly::View)
   end
+
+  it "can be converted to XML" do
+    view = Bugly::View.new
+    view.name = "a great label"
+
+    view.attributes.should_not be_nil
+    view.to_xml.should_not be_nil
+  end
 end

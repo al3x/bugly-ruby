@@ -1,5 +1,6 @@
 require "httparty"
 require "hashie"
+require "active_model"
 
 class Bugly
   include HTTParty
@@ -12,4 +13,5 @@ class Bugly
   autoload :Category, "bugly/category"
   autoload :User, "bugly/user"
   autoload :Label, "bugly/label"
+  autoload :SerializableDash, "bugly/serializable_dash"
 end

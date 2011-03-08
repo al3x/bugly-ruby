@@ -1,5 +1,5 @@
 # Wrapper around an issue.
-class Bugly::Issue < Hashie::Dash
+class Bugly::Issue < Bugly::SerializableDash
   # fields
   property :assigned_to
   property :created_at
