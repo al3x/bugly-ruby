@@ -10,4 +10,5 @@ class Bugly
   autoload :Milestone, "bugly/milestone"
   autoload :View, "bugly/view"
   autoload :Category, "bugly/category"
+  autoload :User, "bugly/user"
 end

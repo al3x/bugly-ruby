@@ -75,6 +75,21 @@ class Bugly::Account
       Bugly.get("/categories/#{id}.xml")["category"]
     )
   end
+
+  # users
+
+  def users
+    Bugly.
+      get("/users.xml").
+      parsed_response["users"].
+      map { |p| Bugly::User.new(p) }
+  end
+
+  def user(id)
+    Bugly::User.new(
+      Bugly.get("/users/#{id}.xml")["user"]
+    )
+  end
   
   # issues
   

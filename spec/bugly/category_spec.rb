@@ -20,4 +20,5 @@ describe Bugly::Category do
     category = account.category(426)
     category.name == 'Bug'
   end
+  
 end
