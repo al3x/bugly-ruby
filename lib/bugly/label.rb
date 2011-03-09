@@ -1,4 +1,5 @@
-class Bugly::Label < Bugly::SerializableDash
+class Bugly::Label < Bugly::Base
+
   property :name
   property :created_at
   property :public
@@ -11,4 +12,5 @@ class Bugly::Label < Bugly::SerializableDash
   property :public_show_history
   property :created_by
   property :project
+
 end

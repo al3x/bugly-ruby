@@ -1,5 +1,6 @@
 # Wrapper around an issue.
-class Bugly::Issue < Bugly::SerializableDash
+class Bugly::Issue < Bugly::Base
+
   # fields
   property :assigned_to
   property :created_at
@@ -25,7 +26,4 @@ class Bugly::Issue < Bugly::SerializableDash
   property :project
   property :milestone
 
-  def self.create(issue)
-    Bugly.post('/issues.xml', { :body => issue.to_xml })
-  end
 end

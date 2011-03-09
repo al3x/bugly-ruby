@@ -1,4 +1,4 @@
-class Bugly::User < Bugly::SerializableDash
+class Bugly::User < Bugly::Base
   property :created_at
   property :updated_at
   property :url

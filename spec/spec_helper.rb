@@ -4,7 +4,7 @@ require "bugly"
 FakeWeb.allow_net_connect = false
 
 RSpec.configure do
-  # Gratuitously borrowed from Wynn Netherland's gowalla gem
+  ## Gratuitously borrowed from Wynn Netherland's gowalla gem
   def stub_get(url, filename, options={})
     opts = {
       :body => fixture_file(filename),
@@ -21,6 +21,24 @@ RSpec.configure do
     }.merge(options)
 
     FakeWeb.register_uri(:post, bugly_url(url), opts)
+  end
+
+  def stub_put(url, filename, options={})
+    opts = {
+      :body => fixture_file(filename),
+      :content_type => 'application/xml; charset=utf-8'
+    }.merge(options)
+
+    FakeWeb.register_uri(:put, bugly_url(url), opts)
+  end
+
+  def stub_delete(url, filename, options={})
+    opts = {
+      :body => fixture_file(filename),
+      :content_type => 'application/xml; charset=utf-8'
+    }.merge(options)
+
+    FakeWeb.register_uri(:delete, bugly_url(url), opts)
   end
 
   def fixture_file(filename)

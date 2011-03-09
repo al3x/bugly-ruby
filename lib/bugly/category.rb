@@ -1,4 +1,4 @@
-class Bugly::Category < Bugly::SerializableDash
+class Bugly::Category < Bugly::Base
   property :name
   property :created_at
   property :updated_at

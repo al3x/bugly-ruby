@@ -1,4 +1,5 @@
-class Bugly::Milestone < Bugly::SerializableDash
+class Bugly::Milestone < Bugly::Base
+
   property :name
   property :created_at
   property :end_note
@@ -22,4 +23,5 @@ class Bugly::Milestone < Bugly::SerializableDash
       parsed_response["issues"].
       map { |p| Bugly::Issue.new(p) }
   end
+  
 end

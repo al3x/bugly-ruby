@@ -1,4 +1,4 @@
-class Bugly::View < Bugly::SerializableDash
+class Bugly::View < Bugly::Base
 
   property :name
   property :created_at

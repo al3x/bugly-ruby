@@ -77,9 +77,8 @@ describe Bugly::Issue do
     new_issue.title.should == "created from API"
 
     created_issue = Bugly::Issue.create(new_issue)
-    reparsed_issue = Bugly::Issue.new(created_issue.parsed_response["issues"])
-
+    
     # did it come back okay?
-    new_issue.title == reparsed_issue.title
+    new_issue.title == created_issue.title
   end
 end

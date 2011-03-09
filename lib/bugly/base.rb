@@ -1,18 +1,39 @@
+module Bugly::SharedBase
+  def plural_resource_name
+    ActiveModel::Naming.plural(self).split('_')[1]
+  end
+
+  def singular_resource_name
+    ActiveModel::Naming.singular(self).split('_')[1]
+  end
+
+  def deserialize(response)
+    if response =~ /<errors>/
+      Bugly::Error.new(response["errors"])
+    else
+      new(response[singular_resource_name])
+    end
+  end
+end
+
+
 class Bugly::Base < Hashie::Dash
 
   include ActiveModel::Serializers::Xml
   extend ActiveModel::Naming
 
+  # we intentionally want these shared methods available to both
+  # the class and instances
+  include Bugly::SharedBase
+  extend Bugly::SharedBase
+
   # class methods
 
   def self.create(resource)
-    Bugly.post("/#{resource_name_for_url}.xml",
-               { :body => resource.to_xml })
-  end
+    response = Bugly.post("/#{plural_resource_name}.xml",
+                          { :body => resource.to_xml })
 
-
-  def self.resource_name_for_url
-    ActiveModel::Naming.plural(self).split('_')[1]
+    deserialize response
   end
 
   # instance methods
@@ -21,14 +42,13 @@ class Bugly::Base < Hashie::Dash
     @attributes ||= build_attributes
   end
 
-  def update(resource)
-    Bugly.put("/#{resource_name_for_url}/#{id}.xml",
-              { :body => resource.to_xml })
+  def update
+    Bugly.put("/#{plural_resource_name}/#{id}.xml",
+              { :body => self.to_xml })
   end
 
-  def self.delete(resource)
-    Bugly.delete("/#{resource_name_for_url}.xml",
-                 { :body => resource.to_xml })
+  def delete
+    Bugly.delete("/#{plural_resource_name}/#{id}.xml")
   end
 
 

@@ -3,8 +3,13 @@ require "hashie"
 require "active_model"
 
 class Bugly
+
   include HTTParty
 
+  # base class
+  autoload :Base, "bugly/base"
+
+  # resource classes
   autoload :Account, "bugly/account"
   autoload :Project, "bugly/project"
   autoload :Issue, "bugly/issue"
@@ -13,5 +18,7 @@ class Bugly
   autoload :Category, "bugly/category"
   autoload :User, "bugly/user"
   autoload :Label, "bugly/label"
-  autoload :SerializableDash, "bugly/serializable_dash"
+
+  # error class
+  autoload :Error, "bugly/error"
 end
