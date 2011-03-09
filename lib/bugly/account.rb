@@ -3,13 +3,17 @@ require 'cgi'
 # Wrapper around an a Bugly account. Use this as the root for accessing the
 # Bugly API.
 class Bugly::Account
+  attr_reader :host, :token
 
   # Connect to a Bugly account. The host is the subdomain for your Bugly
   # account (yourcompany.bug.ly), you can get a token by going to
   # Control Panel -> Users -> you -> API tokens
   def initialize(host, token)
+    @host = host
+    @token = token
+
     Bugly.default_options[:base_uri] = "http://" << host
-    Bugly.default_options[:headers] = { 
+    Bugly.default_options[:headers] = {
       "X-BuglyToken" => token,
       "Content-Type" => 'application/xml'
     }
@@ -33,10 +37,16 @@ class Bugly::Account
         Bugly.get("/#{resource}/#{id}.xml")[resource_singular]
       )
     end
+
+    define_method "create_#{resource_singular}".to_sym do |resource_instance|
+      response = Bugly.post("/#{resource}.xml",
+                            { :body => resource_instance.to_xml })
+
+      resource_class.deserialize(response)
+    end
   end
 
-  # issues
-
+  # issue search
   def issues_matching(query)
     sanitized_query = CGI.escape(query)
 
@@ -45,5 +55,5 @@ class Bugly::Account
       parsed_response["issues"].
       map { |p| Bugly::Issue.new(p) }
   end
-  
+
 end

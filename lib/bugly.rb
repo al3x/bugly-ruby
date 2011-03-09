@@ -19,7 +19,4 @@ class Bugly
   autoload :Category, "bugly/category"
   autoload :User, "bugly/user"
   autoload :Label, "bugly/label"
-
-  # error class
-  autoload :Error, "bugly/error"
 end

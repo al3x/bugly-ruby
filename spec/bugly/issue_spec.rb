@@ -76,7 +76,7 @@ describe Bugly::Issue do
       :project_id => 144)
     new_issue.title.should == "created from API"
 
-    created_issue = Bugly::Issue.create(new_issue)
+    created_issue = account.create_issue(new_issue)
     
     # did it come back okay?
     new_issue.title == created_issue.title

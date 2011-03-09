@@ -1,3 +1,5 @@
+class BuglyException < StandardError; end
+
 module Bugly::SharedBase
   def plural_resource_name
     ActiveModel::Naming.plural(self).split('_')[1]
@@ -8,8 +10,9 @@ module Bugly::SharedBase
   end
 
   def deserialize(response)
-    if response =~ /<errors>/
-      Bugly::Error.new(response["errors"])
+    if response.parsed_response.has_key?("errors")
+      error_message = response.parsed_response["errors"].collect.flatten.join(", ")
+      raise BuglyException, error_message
     else
       new(response[singular_resource_name])
     end
@@ -27,16 +30,6 @@ class Bugly::Base < Hashie::Dash
   include Bugly::SharedBase
   extend Bugly::SharedBase
 
-  # class methods
-
-  def self.create(resource)
-    response = Bugly.post("/#{plural_resource_name}.xml",
-                          { :body => resource.to_xml })
-
-    deserialize response
-  end
-
-  # instance methods
 
   def attributes
     @attributes ||= build_attributes
@@ -52,7 +45,7 @@ class Bugly::Base < Hashie::Dash
   end
 
 
-  private
+  protected
 
   def build_attributes
     new_attributes_hash = {}
