@@ -1,6 +1,7 @@
 require "httparty"
 require "hashie"
 require "active_model"
+require 'active_support/core_ext/string'
 
 class Bugly
 
