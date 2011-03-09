@@ -2,12 +2,12 @@ require 'spec_helper'
 require 'rexml/document'
 
 # simple test class
-class Person < Bugly::SerializableDash
+class Person < Bugly::Base
   property :name
   property :age
 end
 
-describe Bugly::SerializableDash do
+describe Bugly::Base do
 
   it "can be serialized to XML" do
     bob = Person.new
